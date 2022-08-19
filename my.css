@@ -1,0 +1,143 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    --primary-color: #00ac7f;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Utils */
+.text-center {
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.welcome-section,
+.signup-section {
+    height: 100%;
+}
+
+.welcome-section {
+    background-color:  var(--primary-color);
+    width: 30%;
+    color: white;
+    padding: 3.1rem;
+    position: relative;
+}
+
+.signup-section {
+    background-color: white;
+    width: 70%;
+}
+
+.welcome-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3.1rem;
+    right: 3.1rem;
+}
+
+
+
+.brand-name {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 3px #5ad589;
+}
+
+.welcome-text {
+    font-size: 2rem;
+}
+
+.welcome-description {
+    color: #5ae5cc;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.signin-link {
+    color: white;
+    border: 2px solid white;
+    border-radius: 27px;
+    padding: 1rem 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.social-logins a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-inline: 1rem;
+}
+
+.main-hd {
+    color: #00ad7f;
+    font-size: 2.2rem;
+}
+
+.signup-text {
+    color: #ababab;
+}
+
+form[name="signup-form"] input {
+    background-color: #e6f8e8;
+    border: none;
+    margin-block: 1rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    width: 100%;
+    border-radius: 3px;
+}
+
+form[name="signup-form"] input::placeholder {
+    color: #99a798;
+}
+
+form[name="signup-form"] .form-control {
+    position: relative;
+    width: 426px;
+    margin: auto;
+}
+
+form[name="signup-form"] .form-control>.bi {
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    /* transform: translateX(calc(100% + .5rem)); */
+    display: inline-block;
+    vertical-align: middle;
+    color: #99a798;
+    transform: translateY(35%);
+}
+
+form[name="signup-form"] input:focus+.bi {
+    color: black;
+}
+
+form[name="signup-form"] button {
+    background-color: var(--primary-color);
+    padding: 1rem 4rem;
+    border: 1px solid var(--primary-color);
+    color: white;
+    border-radius: 27px;
+}
